@@ -53,6 +53,19 @@ html {
   color: #fff;
   font-size: 6rem;
 }
+@media screen and (max-width: 920px) {
+  .mainvisual img {
+    width: auto;
+  }
+  .mainvisual .main-title p {
+    top: 30%;
+    left: 0%;
+  }
+  .mainvisual .main-title h1 {
+    width: 100%;
+    left: 0%;
+  }
+}
 
 .information {
   width: calc(80% - 64px);

@@ -20,6 +20,21 @@
       font-size: 6rem;
     }
   }
+  @media screen and (max-width:920px) {
+    img {
+      width: auto;
+    }
+    .main-title {
+      p {
+        top: 30%;
+        left: 0%;
+      }
+      h1 {
+        width: 100%;
+        left: 0%;
+      }
+    }
+  }
 }
 
 
