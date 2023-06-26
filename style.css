@@ -1,0 +1,84 @@
+html {
+  font-size: 62.5%;
+}
+
+.header_logo {
+  padding-top: 20px;
+  cursor: pointer;
+}
+.header_logo img {
+  width: 100px;
+}
+
+.header_title {
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  padding-right: 5%;
+}
+.header_title ul {
+  display: flex;
+}
+
+#header {
+  width: 100%;
+  background-color: #fff;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+
+.mainvisual {
+  position: relative;
+}
+.mainvisual img {
+  width: 100%;
+}
+.mainvisual .main-title {
+  text-align: center;
+}
+.mainvisual .main-title p {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: #fff;
+  font-size: 3.6rem;
+}
+.mainvisual .main-title h1 {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  color: #fff;
+  font-size: 6rem;
+}
+
+.information {
+  width: calc(80% - 64px);
+  margin: 30px auto 96px;
+  padding: 30px;
+  border-radius: 8px;
+  border: 2px solid #66C2F4;
+  font-size: 1.4rem;
+  line-height: 25px;
+}
+.information .information-title {
+  text-align: center;
+}
+.information .information-contents {
+  margin: 14px 0;
+}
+
+.service {
+  width: calc(90% - 64px);
+  margin: 30px auto 96px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #f0faff;
+  font-size: 1.4rem;
+  line-height: 25px;
+}
+.service .service-title {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

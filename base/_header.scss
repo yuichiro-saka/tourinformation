@@ -1,0 +1,27 @@
+.header_logo {
+  padding-top: 20px;
+  cursor: pointer;
+  img {
+    width: 100px;
+  }
+}
+
+.header_title{
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  padding-right: 5%;
+  ul{
+    display: flex;
+  }
+}
+
+#header {
+  width: 100%;
+  background-color: #fff;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
