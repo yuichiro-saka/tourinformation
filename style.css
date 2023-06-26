@@ -55,7 +55,9 @@ html {
 }
 @media screen and (max-width: 920px) {
   .mainvisual img {
-    width: auto;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .mainvisual .main-title p {
     top: 30%;

@@ -22,7 +22,8 @@
   }
   @media screen and (max-width:920px) {
     img {
-      width: auto;
+      height: 100vh;
+      object-fit: cover;
     }
     .main-title {
       p {
