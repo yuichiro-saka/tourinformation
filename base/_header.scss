@@ -21,4 +21,9 @@
     color: #2FC1FF;
     text-shadow: 0 4px 6px #b9b9b9;
   }
+  @media screen and (max-width:768px) {
+    h1 {
+      display: none;
+    }
+  }
 }

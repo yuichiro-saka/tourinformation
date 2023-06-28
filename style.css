@@ -35,6 +35,11 @@ html {
   color: #2FC1FF;
   text-shadow: 0 4px 6px #b9b9b9;
 }
+@media screen and (max-width: 768px) {
+  .header_title h1 {
+    display: none;
+  }
+}
 
 .mainvisual {
   margin-bottom: 120px;
@@ -86,6 +91,18 @@ html {
   border-bottom: 1px dashed #c8c8c8;
   padding: 15px;
 }
+@media screen and (max-width: 768px) {
+  #information .information-contents {
+    flex-direction: column;
+  }
+  #information .information-contents dt {
+    width: 100%;
+    border-bottom: none;
+  }
+  #information .information-contents dd {
+    width: 100%;
+  }
+}
 
 #service {
   font-size: 1.4rem;
@@ -129,6 +146,12 @@ html {
 @media screen and (max-width: 768px) {
   #service .service-text {
     font-size: 2rem;
+  }
+  #service .transform-bg {
+    display: none;
+  }
+  #service .transform-bg2 {
+    display: none;
   }
 }
 
@@ -259,6 +282,20 @@ html {
   font-size: 1.4rem;
   margin: 0 auto;
   width: 250px;
+}
+@media screen and (max-width: 768px) {
+  .company {
+    flex-direction: column;
+  }
+  .company .company-link {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .company .tabiterrace {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .copyright {

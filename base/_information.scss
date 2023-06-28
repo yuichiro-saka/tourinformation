@@ -29,5 +29,15 @@
       border-bottom: 1px dashed #c8c8c8;
       padding: 15px;
     }
+    @media screen and (max-width:768px) {
+      flex-direction: column;
+      dt {
+        width: 100%;
+        border-bottom: none;
+      }
+      dd {
+        width: 100%;
+      }
+    }
   }
 }

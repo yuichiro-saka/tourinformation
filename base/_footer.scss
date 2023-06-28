@@ -41,6 +41,18 @@
       }
     }
   }
+  @media screen and (max-width:768px) {
+    flex-direction: column;
+    .company-link {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .tabiterrace {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
 }
 
 .copyright {
