@@ -1,57 +1,49 @@
 html {
   font-size: 62.5%;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 
-.header_logo {
-  padding-top: 20px;
-  cursor: pointer;
-}
-.header_logo img {
-  width: 100px;
-}
-
-.header_title {
-  font-size: 16px;
-  position: absolute;
-  right: 0;
-  margin-top: 20px;
-  padding-right: 5%;
-}
-.header_title ul {
-  display: flex;
+.wrapper {
+  width: 100%;
+  max-width: 1032px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 #header {
-  width: 100%;
   background-color: #fff;
-  height: 80px;
-  position: fixed;
-  top: 0;
-  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .inner {
+  display: flex;
+  align-items: center;
+}
+
+.header_title {
+  display: flex;
+  align-items: center;
+}
+.header_title img {
+  max-width: 240px;
+}
+.header_title h1 {
+  font-size: 3.6rem;
+  margin-left: 20px;
+  color: #2FC1FF;
+  text-shadow: 0 4px 6px #b9b9b9;
 }
 
 .mainvisual {
-  position: relative;
+  margin-bottom: 120px;
 }
 .mainvisual img {
-  width: 100%;
-}
-.mainvisual .main-title {
-  text-align: center;
-}
-.mainvisual .main-title p {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  color: #fff;
-  font-size: 3.6rem;
-}
-.mainvisual .main-title h1 {
-  position: absolute;
-  top: 45%;
-  left: 10%;
-  color: #fff;
-  font-size: 6rem;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
 }
 @media screen and (max-width: 920px) {
   .mainvisual img {
@@ -59,41 +51,219 @@ html {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .mainvisual .main-title p {
-    top: 30%;
-    left: 0%;
+}
+
+#information {
+  margin-bottom: 120px;
+  font-size: 1.4rem;
+  line-height: 25px;
+}
+#information .information-title {
+  text-align: center;
+  color: #1036a3;
+}
+#information .information-title .information-title-ja {
+  font-size: 3.6rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+#information .information-title .information-title-en {
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+}
+#information .information-contents {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#information .information-contents dt {
+  width: 20%;
+  border-bottom: 1px dashed #c8c8c8;
+  padding: 15px;
+}
+#information .information-contents dd {
+  width: 80%;
+  border-bottom: 1px dashed #c8c8c8;
+  padding: 15px;
+}
+
+#service {
+  font-size: 1.4rem;
+  line-height: 25px;
+  margin-bottom: 120px;
+}
+#service .transform-bg {
+  position: absolute;
+  top: 1850px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  z-index: -100;
+  background: #d8f1fe;
+  transform: skewY(20deg);
+  transform-origin: top left;
+}
+#service .transform-bg2 {
+  position: absolute;
+  top: 2350px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  z-index: -90;
+  background: linear-gradient(90deg, #b6e5fe 0%, rgba(36, 200, 191, 0) 100%);
+  transform-origin: top left;
+}
+#service .service-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#service .service-text {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #service .service-text {
+    font-size: 2rem;
   }
-  .mainvisual .main-title h1 {
+}
+
+.travel-service .travel-contents {
+  display: flex;
+  margin-bottom: 60px;
+}
+.travel-service .travel-contents .contents-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.travel-service .travel-contents .contents-cards .card {
+  width: 32%;
+  padding: 20px;
+}
+.travel-service .travel-contents .contents-cards .card img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .travel-service .travel-contents .contents-cards {
+    flex-direction: column;
+    text-align: center;
     width: 100%;
-    left: 0%;
+  }
+  .travel-service .travel-contents .contents-cards .card {
+    width: 100%;
+  }
+  .travel-service .travel-contents .contents-cards .card img {
+    max-width: 70%;
   }
 }
 
-.information {
-  width: calc(80% - 64px);
-  margin: 30px auto 96px;
+.schooltrip {
   padding: 30px;
-  border-radius: 8px;
-  border: 2px solid #66C2F4;
-  font-size: 1.4rem;
-  line-height: 25px;
 }
-.information .information-title {
+.schooltrip .schooltrip-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.schooltrip .schooltrip-contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
   text-align: center;
 }
-.information .information-contents {
-  margin: 14px 0;
+.schooltrip .schooltrip-contents .contents-item-left {
+  width: 42%;
+  margin-bottom: 30px;
+}
+.schooltrip .schooltrip-contents .contents-item-left img {
+  width: 360px;
+  margin-bottom: 10px;
+}
+.schooltrip .schooltrip-contents .contents-item-right {
+  width: 42%;
+  margin-top: 130px;
+}
+.schooltrip .schooltrip-contents .contents-item-right img {
+  width: 360px;
+  margin-bottom: 10px;
+}
+.schooltrip .schooltrip-contents .item {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 760px) {
+  .schooltrip .schooltrip-title {
+    margin-bottom: 50px;
+  }
+  .schooltrip .schooltrip-contents {
+    flex-direction: column;
+  }
+  .schooltrip .schooltrip-contents .contents-item-left {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .schooltrip .schooltrip-contents .contents-item-left img {
+    width: 85%;
+  }
+  .schooltrip .schooltrip-contents .contents-item-right {
+    margin-top: 0;
+    width: 100%;
+  }
+  .schooltrip .schooltrip-contents .contents-item-right img {
+    width: 85%;
+  }
 }
 
-.service {
-  width: calc(90% - 64px);
-  margin: 30px auto 96px;
-  padding: 30px;
-  border-radius: 8px;
-  background-color: #f0faff;
-  font-size: 1.4rem;
-  line-height: 25px;
+.company {
+  display: flex;
+  padding: 0 15px 40px;
 }
-.service .service-title {
+.company .company-link {
+  width: 45%;
+  padding: 20px;
+}
+.company .company-link .denpagakuen {
+  margin-bottom: 30px;
+}
+.company .company-link .denpagakuen img {
+  max-width: 100%;
+}
+.company .company-link .anta img {
+  max-width: 100%;
+}
+.company .tabiterrace {
+  width: 55%;
+  display: flex;
+}
+.company .tabiterrace .tabiterrace-logo {
+  width: 40%;
+}
+.company .tabiterrace .tabiterrace-logo img {
+  max-width: 100%;
+}
+.company .tabiterrace .tabiterrace-information {
+  width: 60%;
+}
+.company .tabiterrace .tabiterrace-information .tabiterrace-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #1036a3;
   text-align: center;
+  margin-bottom: 20px;
+}
+.company .tabiterrace .tabiterrace-information .tabiterrace-contents {
+  font-size: 1.4rem;
+  margin: 0 auto;
+  width: 250px;
+}
+
+.copyright {
+  text-align: center;
+  background-color: #a1ddfd;
+  color: #fff;
+  padding: 10px 0;
 }/*# sourceMappingURL=style.css.map */

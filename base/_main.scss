@@ -1,69 +1,14 @@
 .mainvisual {
-  position: relative;
+  margin-bottom: 120px;
   img{
-    width: 100%;
-  }
-  .main-title{
-    text-align: center;
-    p {
-      position: absolute;
-      top: 30%;
-      left: 10%;
-      color: #fff;
-      font-size: 3.6rem;
-    }
-    h1 {
-      position: absolute;
-      top: 45%;
-      left: 10%;
-      color: #fff;
-      font-size: 6rem;
-    }
+    max-width: 100%;
+    object-fit: cover;
+    height: 100vh;
   }
   @media screen and (max-width:920px) {
     img {
       height: 100vh;
       object-fit: cover;
     }
-    .main-title {
-      p {
-        top: 30%;
-        left: 0%;
-      }
-      h1 {
-        width: 100%;
-        left: 0%;
-      }
-    }
-  }
-}
-
-
-.information {
-  width: calc(80% - 64px);
-  margin: 30px auto 96px;
-  padding: 30px;
-  border-radius: 8px;
-  border: 2px solid #66C2F4;
-  font-size: 1.4rem;
-  line-height: 25px;
-  .information-title {
-    text-align: center;
-  }
-  .information-contents {
-    margin: 14px 0;
-  }
-}
-
-.service {
-  width: calc(90% - 64px);
-  margin: 30px auto 96px;
-  padding: 30px;
-  border-radius: 8px;
-  background-color: #f0faff;
-  font-size: 1.4rem;
-  line-height: 25px;
-  .service-title {
-    text-align: center;
   }
 }

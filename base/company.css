@@ -1,0 +1,42 @@
+.company {
+  display: flex;
+  padding: 60px 15px 40px;
+}
+.company .company-link {
+  width: 45%;
+  padding: 20px;
+}
+.company .company-link .denpagakuen {
+  margin-bottom: 30px;
+}
+.company .company-link .denpagakuen img {
+  max-width: 100%;
+}
+.company .company-link .anta img {
+  max-width: 100%;
+}
+.company .tabiterrace {
+  width: 55%;
+  display: flex;
+}
+.company .tabiterrace .tabiterrace-logo {
+  width: 40%;
+}
+.company .tabiterrace .tabiterrace-logo img {
+  max-width: 100%;
+}
+.company .tabiterrace .tabiterrace-information {
+  width: 60%;
+}
+.company .tabiterrace .tabiterrace-information .tabiterrace-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #1036a3;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.company .tabiterrace .tabiterrace-information .tabiterrace-contents {
+  font-size: 1.4rem;
+  margin: 0 auto;
+  width: 250px;
+}/*# sourceMappingURL=company.css.map */
