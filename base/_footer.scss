@@ -49,8 +49,10 @@
       margin-bottom: 30px;
     }
     .tabiterrace {
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
