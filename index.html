@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
   <title>Document</title>
 </head>
 
 <body>
-  <header id="header" class="wrapper">
+  <header id="header">
     <div class="inner">
       <div class="header_title">
         <img src="img/Black Modern Velannie  Fashion Brand Art Design Logo.png" alt="">
         <h1>旅テラス名古屋</h1>
       </div>
     </div>
-    <div>
+    <div class="itec">
       <a href="https://xs853978.xsrv.jp/itec-nagoya/" target="_blank">
         <img src="img/itec-logo.png" alt="">
       </a>
@@ -26,10 +28,11 @@
   <main>
     <div class="mainvisual">
       <img src="img/travel_arrangement2_heder.jpg" alt="">
+      <h1 class="main-title fadeIn">THANKS＆SIMPATHY</h1>
     </div>
 
     <div id="information" class="wrapper">
-      <div class="information-title">
+      <div class="information-title fadeup">
         <h2 class="information-title-ja">お知らせ</h2>
         <p class="information-title-en">Information</p>
       </div>
@@ -46,7 +49,9 @@
     <div id="service" class="wrapper"> 
       <div class="transform-bg"></div>
       <div class="transform-bg2"></div>
-      <h2 class="service-title">チケットの手配から海外ツアーまで取り扱っております！</h2>
+      <div class="service-title fadeup">
+        <h2>チケットの手配から海外ツアーまで取り扱っております！</h2>
+      </div>
       <div class="travel-service">
         <div class="travel-contents">
           <ul class="contents-cards">
@@ -71,11 +76,20 @@
       </div>
 
       <div class="schooltrip">
-        <h2 class="schooltrip-title">
-          校外学習・遠足・修学旅行もおまかせください！
-        </h2>
+        <div class="service-title fadeup">
+          <h2>
+            校外学習・遠足・修学旅行もおまかせください！
+          </h2>
+        </div>
         <div class="schooltrip-contents">
           <div class="contents-item-left">
+            <div class="item">
+              <img src="img/bus.png" alt="">
+              <div class="item-text">
+                <h3>全国の貸し切りバスを手配</h3>
+                <p>貸切バス事業者安全性評価認定バス会社を利用</p>
+              </div>
+            </div>
             <div class="item">
               <img src="img/mtfuji.jpg" alt="">
               <div class="item-text">
@@ -83,21 +97,13 @@
                 （宿泊・観光・食事）</p>
               </div>
             </div>
-            <div class="item">
-              <img src="img/bus.jpg" alt="">
-              <div class="item-text">
-                <h3>全国の貸し切るバスを手配</h3>
-                <p>貸切バス事業者安全性評価認定のバス会社を利用</p>
-            </div>
-            </div>
           </div>
 
           <div class="contents-item-right">
             <div class="item">
               <img src="img/schooltrip.jpg" alt="">
               <div class="item-text">
-                <p>大手旅行会社と提携<br>
-                  （JTB・近ツー・HIS）</p>
+                <p>大手旅行会社と提携</p>
               </div>
             </div>
           </div>
@@ -118,7 +124,9 @@
             </a>
             
             <div class="anta">
-              <img src="img/logo.gif" alt="">
+              <a href="https://www.anta.or.jp/" target="_blank">
+                <img src="img/logo.gif" alt="">
+              </a>
             </div>
           </div>
     
@@ -141,5 +149,6 @@
         </div>
         <p class="copyright">Copyright&copy;2023 旅テラス名古屋</p>
   </footer>
+  <a href="#" class="pagetop">▲</a>
 </body>
 </html>

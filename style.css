@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
   line-height: 1.5;
@@ -11,15 +12,28 @@ html {
   margin: 0 auto;
 }
 
+.fadeup {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
 #header {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 #header .inner {
   display: flex;
   align-items: center;
+}
+#header .itec {
+  margin-right: 5%;
 }
 
 .header_title {
@@ -32,7 +46,8 @@ html {
 .header_title h1 {
   font-size: 3.6rem;
   margin-left: 20px;
-  color: #2FC1FF;
+  font-weight: bold;
+  color: #1036a3;
   text-shadow: 0 4px 6px #b9b9b9;
 }
 @media screen and (max-width: 768px) {
@@ -48,13 +63,43 @@ html {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100vh;
+  height: 85vh;
+  position: relative;
+}
+.mainvisual .main-title {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: bold;
+  color: #fff;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+}
+.mainvisual .fadeIn {
+  animation-name: fadeInAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 920px) {
   .mainvisual img {
     height: 100vh;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .mainvisual .main-title {
+    font-size: 3.2rem;
+    top: 70%;
   }
 }
 
@@ -103,6 +148,11 @@ html {
     width: 100%;
   }
 }
+@media screen and (max-width: 920px) {
+  #information .information-contents dt {
+    padding-bottom: 0;
+  }
+}
 
 #service {
   font-size: 1.4rem;
@@ -111,7 +161,7 @@ html {
 }
 #service .transform-bg {
   position: absolute;
-  top: 1850px;
+  top: 1750px;
   bottom: 0;
   right: 0;
   left: 0;
@@ -140,10 +190,18 @@ html {
   text-align: center;
   margin-bottom: 30px;
 }
+#service .service-title h2 {
+  color: #1036a3; /*文字色*/
+  padding: 0.5em 0; /*上下の余白*/
+  border-top: solid 3px #1036a3; /*上線*/
+  border-bottom: solid 3px #1036a3; /*下線*/
+  max-width: 700px;
+  margin: 0 auto;
+}
 #service .service-text {
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   #service .service-text {
     font-size: 2rem;
   }
@@ -158,6 +216,7 @@ html {
 .travel-service .travel-contents {
   display: flex;
   margin-bottom: 60px;
+  font-size: 1.6rem;
 }
 .travel-service .travel-contents .contents-cards {
   display: flex;
@@ -170,7 +229,7 @@ html {
 .travel-service .travel-contents .contents-cards .card img {
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .travel-service .travel-contents .contents-cards {
     flex-direction: column;
     text-align: center;
@@ -187,20 +246,15 @@ html {
 .schooltrip {
   padding: 30px;
 }
-.schooltrip .schooltrip-title {
-  text-align: center;
-  font-size: 2.4rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
 .schooltrip .schooltrip-contents {
   display: flex;
   justify-content: space-between;
-  padding: 0 10%;
+  padding: 0 5%;
   text-align: center;
+  font-size: 1.6rem;
 }
 .schooltrip .schooltrip-contents .contents-item-left {
-  width: 42%;
+  width: 45%;
   margin-bottom: 30px;
 }
 .schooltrip .schooltrip-contents .contents-item-left img {
@@ -208,7 +262,7 @@ html {
   margin-bottom: 10px;
 }
 .schooltrip .schooltrip-contents .contents-item-right {
-  width: 42%;
+  width: 45%;
   margin-top: 130px;
 }
 .schooltrip .schooltrip-contents .contents-item-right img {
@@ -218,9 +272,13 @@ html {
 .schooltrip .schooltrip-contents .item {
   margin-bottom: 50px;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 920px) {
+  .schooltrip {
+    border-radius: 20px;
+    background-color: #f0faff;
+  }
   .schooltrip .schooltrip-title {
-    margin-bottom: 50px;
+    margin: 20px 0 50px;
   }
   .schooltrip .schooltrip-contents {
     flex-direction: column;
@@ -305,4 +363,20 @@ html {
   background-color: #a1ddfd;
   color: #fff;
   padding: 10px 0;
+}
+
+.pagetop {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #eef6f9;
+  opacity: 0.8;
+  border-radius: 10%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  color: #1036a3;
 }/*# sourceMappingURL=style.css.map */

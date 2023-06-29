@@ -1,10 +1,12 @@
+@use "colors";
+
 #information {
   margin-bottom: 120px;
   font-size: 1.4rem;
   line-height: 25px;
   .information-title {
     text-align: center;
-    color: #1036a3;
+    color: colors.$text-color;
     .information-title-ja {
       font-size: 3.6rem;
       margin-bottom: 15px;
@@ -38,6 +40,11 @@
       dd {
         width: 100%;
       }
+    }
+  }
+  @media screen and (max-width:920px) {
+    .information-contents dt {
+      padding-bottom: 0;
     }
   }
 }

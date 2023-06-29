@@ -1,10 +1,12 @@
+@use "colors";
+
 #service {
   font-size: 1.4rem;
   line-height: 25px;
   margin-bottom: 120px;
   .transform-bg {
     position: absolute;
-    top: 1850px;
+    top: 1750px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -32,11 +34,19 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
+    h2 {
+      color: colors.$text-color;/*文字色*/
+      padding: 0.5em 0;/*上下の余白*/
+      border-top: solid 3px colors.$text-color;/*上線*/
+      border-bottom: solid 3px colors.$text-color;/*下線*/
+      max-width: 700px;
+      margin: 0 auto;
+    }
   }
   .service-text {
     text-align: center;
   }
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:920px) {
     .service-text {
       font-size: 2rem;
     }
@@ -53,6 +63,7 @@
   .travel-contents {
     display: flex;
     margin-bottom: 60px;
+    font-size: 1.6rem;
     .contents-cards {
       display: flex;
       justify-content: space-between;
@@ -64,7 +75,7 @@
         }
       }
     }
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:920px) {
       .contents-cards {
         flex-direction: column;
         text-align: center;
@@ -82,19 +93,14 @@
 
 .schooltrip {
   padding: 30px;
-  .schooltrip-title {
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
   .schooltrip-contents {
     display: flex;
     justify-content: space-between;
-    padding: 0 10%;
+    padding: 0 5%;
     text-align: center;
+    font-size: 1.6rem;
     .contents-item-left {
-      width: 42%;
+      width: 45%;
       margin-bottom: 30px;
       img {
         width: 360px;
@@ -102,7 +108,7 @@
       }
     }
     .contents-item-right {
-      width: 42%;
+      width: 45%;
       margin-top: 130px;
       img {
         width: 360px;
@@ -113,9 +119,11 @@
       margin-bottom: 50px;
     }
   }
-  @media screen and (max-width:760px) {
+  @media screen and (max-width:920px) {
+    border-radius: 20px;
+    background-color: #f0faff;
     .schooltrip-title {
-      margin-bottom: 50px;
+      margin: 20px 0 50px;
     }
     .schooltrip-contents {
       flex-direction: column;

@@ -10,3 +10,9 @@ html {
   padding: 0 16px;
   margin: 0 auto;
 }
+
+.fadeup {
+  opacity : 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
